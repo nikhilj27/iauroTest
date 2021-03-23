@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<mat-card class="example-card mt-2">
   <mat-card-header>
     <mat-card-title>Student Registration Form</mat-card-title>
   </mat-card-header>
@@ -85,8 +85,9 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-6">
-          <mat-radio-group aria-label="Select an option" formControlName="gender">
+        <div class="col-sm-6 d-flex">
+          <mat-label style="color: grey;">Select gender: </mat-label>
+          <mat-radio-group class="ml-3" aria-label="Select an option" formControlName="gender">
             <mat-radio-button value="1">Male</mat-radio-button>
             &nbsp;
             <mat-radio-button value="2">Female</mat-radio-button>
